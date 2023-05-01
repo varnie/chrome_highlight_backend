@@ -97,7 +97,6 @@ def receive_html():
 
     # person, location, organization
     for ent in doc.ents:
-        #print(ent.label_, " ", ent.text)
         if ent.label_ == "PERSON":
             labels["persons"].append(ent.text)
         elif ent.label_ == "ORG":
